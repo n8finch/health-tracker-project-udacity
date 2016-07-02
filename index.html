@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health Tracker</title>
+    <link rel="stylesheet" href="dist/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <form class="target-daily-calories">
+            <label class="target-daily-calories-label">Daily Target</label>
+            <input type="text" placeholder="3,000" />
+        </form>
+        <h1>Health Tracker</h1>
+        <form class="search-bar" role="search">
+            <input type="search" placeholder="Enter Food (e.g. 'chedder cheese')" />
+            <button type="submit">
+                <span class="fa fa-search" alt="Search Icon"></span>
+            </button>
+        </form>
+
+    </header>
+
+    <div class="search-results-container">
+        <h2>Search Results</h2>
+        <ul class="search-results-list">
+            <li>Result 1 <a href="#" class="add-to-daily-log">+</a></li>
+            <li>Result 2 <a href="#" class="add-to-daily-log">+</a></li>
+            <li>Result 3 <a href="#" class="add-to-daily-log">+</a></li>
+        </ul>
+
+    </div>
+
+
+    <div class="daily-log-container">
+        <h2>Current Daily Total: <span class="current-daily-total">2,948</span></h2>
+        <div class="progress-bar">
+            <span class="meter" style="width: 10%"></span>
+        </div>
+        <table class="tables" id="daily-log-table">
+            <thead>
+            <tr>
+                <th>Food</th>
+                <th>Servings</th>
+                <th>Total Calories</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Row 1 Cell 1</td>
+                <td>
+                    <button class="food-item-inc">-</button>
+                    <span class="food-item-serving">186</span>
+                    <button class="food-item-inc">+</button>
+                </td>
+                <td>Row 1 Cell 2</td>
+            </tr>
+            <tr>
+                <td>Row 2 Cell 1</td>
+                <td>
+                    <button class="food-item-inc">-</button>
+                    <span class="food-item-serving">186</span>
+                    <button class="food-item-inc">+</button>
+                </td>
+                <td>Row 2 Cell 2</td>
+            </tr>
+            <tr>
+                <td>Row 3 Cell 1</td>
+                <td>
+                    <button class="food-item-inc">-</button>
+                    <span class="food-item-serving">186</span>
+                    <button class="food-item-inc">+</button>
+                </td>
+                <td>Row 3 Cell 2</td>
+            </tr>
+            <tr>
+                <td>Row 4 Cell 1</td>
+                <td>
+                    <button class="food-item-inc">-</button>
+                    <span class="food-item-serving">186</span>
+                    <button class="food-item-inc">+</button>
+                </td>
+                <td>Row 4 Cell 2</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+
+
+
+    <footer>
+        <p>
+            Built by <a href="https://n8finch.com">Nate Finch</a> |
+            Powered by <a href="http://www.nutritionix.com/api">Nutritionix API</a>
+        </p>
+    </footer>
+
+</body>
+</html>
