@@ -637,11 +637,11 @@ div.search-results-container {
 div.search-results-container ul li {
   margin: 10px 0;
 }
-div.search-results-container ul li a.add-to-daily-log {
+div.search-results-container ul li button.add-to-daily-log {
   float: right;
   color: #ffffff;
   background-color: #1565c0;
-  padding: 0 5px;
+  padding: 0 7px 2px;
   border-radius: 3px;
 }
 
