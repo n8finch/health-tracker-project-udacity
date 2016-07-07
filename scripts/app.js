@@ -8,5 +8,28 @@ $(function () {
   'use strict';
 
   // kick things off by creating the `App`
-  new app.AppView();
+  // new app.SearchView();
+  
+  
+  $('button').on('click', function() {
+    
+    console.log('click');
+
+    $.ajax({
+      type: "GET",
+      dataType: 'json',
+      cache: false,
+      url: '/scripts/api.js',
+      async: true
+    })
+      .done(function (response) {
+        console.log(response);
+      })
+      .fail(function (response) {
+
+      });
+
+  });
+  
+  
 });
